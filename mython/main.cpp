@@ -2,7 +2,7 @@
 #include "parse.h"
 #include "runtime.h"
 #include "statement.h"
-#include "test_runner.h"
+#include "test_runner_p.h"
 
 #include <iostream>
 
@@ -134,7 +134,7 @@ int main() {
         RunMythonProgram(cin, cout);
     } catch (const std::exception& e) {
         std::cerr << e.what() << std::endl;
-		return 1;
+        return 1;
     }
     return 0;
 }
