@@ -1,6 +1,6 @@
 # cpp-mython
 
-`cpp-mython` is an interpreter for the custom programming language **Mython**, implemented in C++. The project includes lexical analysis, parsing, runtime execution, and testing modules, providing a comprehensive environment for interpreting Mython scripts.
+`cpp-mython` is a Yandex.Practicum C++ course project implementing a small Python-like language through lexical analysis, parsing, an AST-based runtime, and component tests.
 
 ---
 
@@ -10,3 +10,9 @@
 - **Parser**: Builds an Abstract Syntax Tree (AST) from the token stream.
 - **Runtime**: Executes the AST, handling variables, expressions, and control structures.
 - **Unit Tests**: Extensive testing for each component of the interpreter.
+
+## Structure and build notes
+
+- Lexer, parser, runtime, statements, and their test helpers are under `mython/`.
+- Requires a C++17-compatible compiler.
+- The repository does not include a portable project-level build configuration.
